@@ -35,7 +35,7 @@ export const PrivacyPage = () => (
     toc={[{href:'#p1',label:'1. Who We Are'},{href:'#p2',label:'2. Data We Collect'},{href:'#p3',label:'3. How We Use It'},{href:'#p4',label:'4. Legal Basis'},{href:'#p5',label:'5. Sharing'},{href:'#p6',label:'6. Retention'},{href:'#p7',label:'7. Your Rights'},{href:'#p8',label:'8. Contact'}]}>
     <div className="lp-note">Compliant with <strong>UAE Federal Law No. 45 of 2021 (PDPL)</strong>, <strong>DIFC Data Protection Law 2020</strong>, and EU GDPR (for EEA participants).</div>
     <h2 id="p1">1. Who We Are</h2>
-    <p><strong>Data Controller:</strong> Solvagence Global AI Academy (trading name of Solvagence Ltd)<br/><strong>Address:</strong> DIFC, Dubai, UAE<br/><strong>Contact:</strong> <a href={ACAD}>academy@solvagence.com</a></p>
+    <p><strong>Data Controller:</strong> Solvagence Global AI Academy (trading name of Solvagence)<br/><strong>Address:</strong> DIFC, Dubai, UAE<br/><strong>Contact:</strong> <a href={ACAD}>academy@solvagence.com</a></p>
     <h2 id="p2">2. Data We Collect</h2>
     <h3>Enrollment Data</h3>
     <ul><li>Full name, work email, phone, country</li><li>Job title, organisation, industry</li><li>Years of experience, qualification, LinkedIn URL (optional)</li></ul>

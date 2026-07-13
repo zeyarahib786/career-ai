@@ -114,7 +114,7 @@ const SiteFooter = ({ logoSrc }) => {
           <p className="footer-legal-text">
             <strong data-t="foot.legal.notice.label">{t('foot.legal.notice.label') || 'Legal Notice:'}</strong>{' '}
             <span data-t="foot.legal.notice.text">
-              {t('foot.legal.notice.text') || 'Solvagence Global AI Academy is a trading name of Solvagence Ltd, registered in the UAE. All institutional affiliations refer to alumni connections — not institutional endorsements. All prices subject to 5% UAE VAT.'}
+              {t('foot.legal.notice.text') || 'Solvagence reserves the right to modify programme offerings, pricing, schedules, and services without prior notice. Certifications are issued by Solvagence unless otherwise stated and do not imply external accreditation. Any references to universities, institutions, organisations, technologies, or brands are for informational purposes only and do not constitute endorsement, affiliation, partnership, or accreditation unless explicitly confirmed in writing by Solvagence. Applicable taxes may apply where required. Full Terms & Conditions and Refund Policy are available upon request at'}
             </span>{' '}
             <a href={ACADEMY} className="footer-legal-link">academy@solvagence.com</a>
           </p>
