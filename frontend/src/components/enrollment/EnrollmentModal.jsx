@@ -78,7 +78,7 @@ const EnrollmentModal = ({ isOpen, onClose, preselectedCodes = [], initialCohort
           certificationCodes: form.certificationCodes,
           seats: effectiveSeats,
           cohortType: form.cohortType,
-          country: form.country,
+          ...(form.country ? { country: form.country } : {}),
         });
         setPricing(res.data.data);
       } catch {

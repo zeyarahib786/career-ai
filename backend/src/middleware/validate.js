@@ -30,7 +30,7 @@ exports.pricingRules = [
   body('certificationCodes.*').matches(/^SGA-0[1-6]$/).withMessage('Invalid code'),
   body('seats').optional().isInt({ min:1 }),
   body('cohortType').optional().isIn(['individual','team']),
-  body('country').optional().isLength({ min:2, max:3 }),
+  body('country').optional({ checkFalsy:true }).isLength({ min:2, max:3 }),
 ];
 
 exports.localeQuery = query('locale').optional().isIn(['en','ar']).withMessage('locale must be en or ar');
