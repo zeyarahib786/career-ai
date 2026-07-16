@@ -19,8 +19,9 @@ const SiteNav = ({ logoSrc, onEnrollClick }) => {
 
   const links = [
     { label:t('nav.programs'), href:'/#programmes' },
-    { label:t('nav.why'),     href:'/#why-us' },
     { label:t('nav.faculty'), href:'/#faculty' },
+    { label:t('nav.why'),     href:'/#why-us' },
+    { label:t('nav.enrollment'), href:'/#enrollment-options' },
     { label:t('nav.faq'),     href:'/#faq' },
   ];
 

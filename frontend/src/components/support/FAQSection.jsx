@@ -17,6 +17,8 @@ const FAQ_AR = [
   { q:'هل يوجد خصم للمجموعات؟', a:'نعم. 2–5 مقاعد: خصم 10٪. 6–14 مقعداً: خصم 20٪. 15+ مقعداً: تواصل مع leaders@solvagence.com.' },
   { q:'هل الشهادات معتمدة خارجياً؟', a:'شهادات سولفاجنس هي اعتمادات مهنية صادرة عن الأكاديمية. طلبات الاعتماد الخارجي جارية.' },
   { q:'ما سياسة الاسترداد؟', a:'إشعار 14+ يوماً: استرداد كامل. 7–13 يوماً: استرداد 50٪. أقل من 7 أيام: لا استرداد.' },
+  { q:'هل يمكنني التسجيل في أكثر من شهادة؟', a:'نعم. التسجيل في شهادتين أو أكثر في نفس الوقت يؤهلك للحصول على خصم حزمة بنسبة 5٪.' },
+  { q:'هل توفرون الفوترة؟', a:'نعم. تتوفر الفواتير والدفع عبر أمر الشراء لتسجيل الشركات. تواصل عبر academy@solvagence.com.' },
 ];
 
 const FAQSection = () => {
@@ -25,7 +27,7 @@ const FAQSection = () => {
   const faqs = isAr ? FAQ_AR : FAQ_EN;
 
   return (
-    <section id="faq" className="section" data-component="FAQSection" aria-labelledby="faq-heading">
+    <section id="faq" className="section section-alt" data-component="FAQSection" aria-labelledby="faq-heading">
       <div className="section-inner">
         <div className="section-hdr rv">
           <div className="eyebrow"><span data-t="faq.eyebrow">{t('faq.eyebrow')}</span></div>

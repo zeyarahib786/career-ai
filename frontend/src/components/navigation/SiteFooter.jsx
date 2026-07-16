@@ -73,8 +73,8 @@ const SiteFooter = ({ logoSrc }) => {
             <ul>
               <li><Link to="/#why-us"><span data-t="foot.l.why">{t('foot.l.why')}</span></Link></li>
               <li><Link to="/#pathway"><span data-t="foot.l.path">{t('foot.l.path')}</span></Link></li>
-              <li><Link to="/#contact"><span data-t="foot.l.grp">{t('foot.l.grp')}</span></Link></li>
-              <li><a href={LEADERS}><span data-t="foot.l.prt">{t('foot.l.prt')}</span></a></li>
+              <li><Link to="/#enrollment-options"><span data-t="foot.l.grp">{t('foot.l.grp')}</span></Link></li>
+              <li><Link to="/#enrollment-options"><span data-t="foot.l.prt">{t('foot.l.prt')}</span></Link></li>
               <li><Link to="/#faq"><span data-t="foot.l.faq">{t('foot.l.faq')}</span></Link></li>
               <li><a href={ACADEMY}><span data-t="foot.l.contact">{t('foot.l.contact')}</span></a></li>
             </ul>

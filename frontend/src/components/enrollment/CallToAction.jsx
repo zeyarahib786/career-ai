@@ -1,26 +1,37 @@
 import { useTranslation } from '../../hooks/useTranslation';
 import PropTypes from 'prop-types';
 
-const GUIDE = 'mailto:academy@solvagence.com?subject=Enrollment%20Guide%20Request&body=Please%20send%20me%20the%20enrollment%20guide.%0A%0AName%3A%20%0AOrganisation%3A%20';
+const PARTNERSHIP =
+  'mailto:leaders@solvagence.com?subject=Partnership%20Enquiry%20%E2%80%94%20Solvagence%20Global%20AI%20Academy%20%28July%202026%29';
 
 const CallToAction = ({ onEnrollClick }) => {
   const { t } = useTranslation();
   return (
-    <section id="contact" className="section cta-sect" data-component="CallToAction"
+    <section className="cta-section" data-component="CallToAction"
       aria-labelledby="cta-heading">
-      <div className="section-inner cta-inner">
-        <div className="eyebrow"><span data-t="cta.eyebrow">{t('cta.eyebrow')}</span></div>
-        <h2 className="section-h" id="cta-heading">
-          <span data-t="cta.h2.a">{t('cta.h2.a')}</span>{' '}
-          <span data-t="cta.h2.b">{t('cta.h2.b')}</span>
-        </h2>
-        <p className="section-sub rv" data-t="cta.sub">{t('cta.sub')}</p>
-        <div className="cta-actions rv">
-          <button className="btn-em cta-main-btn" onClick={onEnrollClick} data-t="cta.ind">
-            {t('cta.ind')}
-          </button>
-          <a href={GUIDE} className="btn-ghost" data-t="foot.l.guide">{t('foot.l.guide')}</a>
+      <div className="cta-inner">
+        <div className="cta-copy">
+          <div className="eyebrow"><span data-t="cta.eyebrow">{t('cta.eyebrow')}</span></div>
+          <h2 className="cta-h rv" id="cta-heading">
+            <span data-t="cta.h2.a">{t('cta.h2.a')}</span><br/>
+            <em data-t="cta.h2.b">{t('cta.h2.b')}</em>
+          </h2>
+          <p className="cta-p rv" data-t="cta.sub">{t('cta.sub')}</p>
+          <div className="cta-actions rv">
+            <button className="btn btn-em" onClick={() => onEnrollClick('individual')} data-t="cta.ind">{t('cta.ind')}</button>
+            <button className="btn btn-ghost" onClick={() => onEnrollClick('team')} data-t="cta.grp">{t('cta.grp')}</button>
+            <a href={PARTNERSHIP} className="btn btn-mono" data-t="cta.prt">{t('cta.prt')}</a>
+          </div>
         </div>
+        <aside className="cta-box rv" aria-labelledby="cta-box-h">
+          <div className="cta-box-title" id="cta-box-h" data-t="cta.box.title">{t('cta.box.title')}</div>
+          <ul className="cta-list" role="list">
+            {[1,2,3,4,5,6,7].map(i => <li className="cta-li" key={i}>{t(`cta.i${i}`)}</li>)}
+          </ul>
+          <button className="btn btn-em btn-full" onClick={() => onEnrollClick('individual')}>
+            <span data-t="opt.ind.cta">{t('opt.ind.cta')}</span> <span aria-hidden="true">→</span>
+          </button>
+        </aside>
       </div>
     </section>
   );
